@@ -115,9 +115,35 @@ header p{{color:#aaa;max-width:600px;margin:0 auto}}
 .hidden{{display:none!important}}
 footer{{text-align:center;padding:2rem;color:#666;font-size:.8rem;border-top:1px solid #222;margin-top:2rem}}
 footer a{{color:#e74c3c;text-decoration:none}}
+/* ── In-page game player ── */
+#player{{display:none;position:fixed;inset:0;z-index:9999;background:#000;flex-direction:column}}
+#player.open{{display:flex}}
+#player-bar{{display:flex;align-items:center;gap:.75rem;padding:.5rem .75rem;background:#1a1a2e;border-bottom:2px solid #e74c3c;min-height:44px;flex-shrink:0}}
+#player-back{{background:#e74c3c;border:none;color:#fff;padding:.35rem .9rem;border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600;white-space:nowrap}}
+#player-back:hover{{background:#c0392b}}
+#player-title{{color:#fff;font-weight:600;font-size:.95rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+#player-ext{{color:#aaa;font-size:.8rem;text-decoration:none;border:1px solid #444;padding:.3rem .7rem;border-radius:6px;white-space:nowrap}}
+#player-ext:hover{{border-color:#e74c3c;color:#e74c3c}}
+#player-frame{{flex:1;width:100%;border:none;background:#000}}
+#player-blocked{{display:none;flex:1;align-items:center;justify-content:center;flex-direction:column;gap:1rem;background:#0f0f1a}}
+#player-blocked p{{color:#aaa;font-size:.95rem}}
+#player-blocked a{{background:#e74c3c;color:#fff;padding:.6rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:600}}
 </style>
 </head>
 <body>
+<!-- In-page game player overlay -->
+<div id="player">
+  <div id="player-bar">
+    <button id="player-back">&#8592; Back</button>
+    <span id="player-title"></span>
+    <a id="player-ext" href="#" target="_blank" rel="noopener">Open tab ↗</a>
+  </div>
+  <iframe id="player-frame" allowfullscreen allow="fullscreen *; autoplay *"></iframe>
+  <div id="player-blocked">
+    <p>This game can't be embedded — open it directly:</p>
+    <a id="player-blocked-link" href="#" target="_blank" rel="noopener">Play Now ↗</a>
+  </div>
+</div>
 <header>
   <h1>🎮 Unblocked Games 66</h1>
   <p>474 free games — play instantly at school, work, or anywhere. No download, no login.</p>
@@ -132,6 +158,7 @@ footer a{{color:#e74c3c;text-decoration:none}}
   <p>Game directory linking to <a href="{GSITE_URL}" target="_blank" rel="noopener">unblockedgames66.gitlab.io</a> — © 2026 Unblocked Games 66</p>
 </footer>
 <script>
+// ── Category filter ──
 const btns = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.card');
 btns.forEach(btn => btn.addEventListener('click', () => {{
@@ -140,6 +167,56 @@ btns.forEach(btn => btn.addEventListener('click', () => {{
   const f = btn.dataset.filter;
   cards.forEach(c => c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f));
 }}));
+
+// ── In-page player ──
+const player      = document.getElementById('player');
+const pFrame      = document.getElementById('player-frame');
+const pTitle      = document.getElementById('player-title');
+const pExt        = document.getElementById('player-ext');
+const pBlocked    = document.getElementById('player-blocked');
+const pBlockedLnk = document.getElementById('player-blocked-link');
+
+function openGame(url, title) {{
+  pTitle.textContent = title;
+  pExt.href = url;
+  pBlockedLnk.href = url;
+  pFrame.style.display = 'block';
+  pBlocked.style.display = 'none';
+  pFrame.src = '';
+  player.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Detect X-Frame-Options block: if frame doesn't load within 5s → show fallback
+  const timer = setTimeout(() => {{
+    try {{
+      // If contentDocument is null cross-origin load failed visibly
+      if (!pFrame.contentWindow || !pFrame.contentWindow.location.href) throw new Error();
+    }} catch(e) {{}}
+  }}, 500);
+  pFrame.onload = () => {{ clearTimeout(timer); }};
+  pFrame.onerror = () => {{
+    pFrame.style.display = 'none';
+    pBlocked.style.display = 'flex';
+  }};
+  // Small delay so overlay renders first
+  setTimeout(() => {{ pFrame.src = url; }}, 50);
+}}
+
+function closeGame() {{
+  pFrame.src = '';
+  player.classList.remove('open');
+  document.body.style.overflow = '';
+}}
+
+document.getElementById('player-back').addEventListener('click', closeGame);
+document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeGame(); }});
+
+// Intercept all card clicks
+cards.forEach(card => {{
+  card.addEventListener('click', e => {{
+    e.preventDefault();
+    openGame(card.href, card.querySelector('h2').textContent);
+  }});
+}});
 </script>
 </body>
 </html>
