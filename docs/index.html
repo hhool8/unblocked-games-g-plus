@@ -4418,7 +4418,9 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeGame();
 cards.forEach(card => {
   card.addEventListener('click', e => {
     e.preventDefault();
-    openGame(card.href, card.querySelector('h2').textContent);
+    const slug = card.href.match(/\/game\/([^.]+)\.html/)?.[1];
+    const playUrl = slug ? `https://ug66.poki2.online/play/${slug}.html` : card.href;
+    openGame(playUrl, card.querySelector('h2').textContent);
   });
 });
 </script>
