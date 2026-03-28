@@ -19,7 +19,7 @@ from pathlib import Path
 
 BASE     = Path(__file__).parent.parent
 GAME_DIR = BASE / "game"
-OUT_DIR  = BASE / "docs" / "play"
+OUT_DIR  = BASE / "play"
 SITE     = "https://ug66.poki2.online"
 GITLAB   = "https://unblockedgames66.gitlab.io"
 
