@@ -68,9 +68,9 @@ body{background:#0f0f1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFo
 
   // Fullscreen
   window.goFS = function(){
-    var f = document.getElementById('gf');
-    var fn = f.requestFullscreen || f.webkitRequestFullscreen || f.msRequestFullscreen;
-    if (fn) fn.call(f);
+    var el = document.documentElement;
+    var fn = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+    if (fn) fn.call(el);
   };
 })();
 </script>
