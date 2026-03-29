@@ -9,7 +9,7 @@ from pathlib import Path
 
 BASE     = Path(__file__).parent.parent
 GAME_DIR = BASE / "game"
-PLAY     = "https://ug66.poki2.online/play"
+PLAY     = "https://unblocked-games-g-plus.poki2.online/play"
 GITLAB   = "https://unblockedgames66.gitlab.io"
 
 RE_TITLE = re.compile(r'<title>([^<|]+)', re.I)

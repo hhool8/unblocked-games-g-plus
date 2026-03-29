@@ -10,7 +10,7 @@
 ```
 Google Sites sub-page (e.g. "Slope")
     └─ Google Sites Embed
-          └─ https://ug66.poki2.online/play/slope.html   ← your GitHub Pages (full control)
+          └─ https://unblocked-games-g-plus.poki2.online/play/slope.html   ← your GitHub Pages (full control)
                 ├─ AdSense ad slots (top + bottom)
                 └─ <iframe src="https://unblockedgames66.gitlab.io/slope/"> ← real game
 ```
@@ -20,7 +20,7 @@ Google Sites sub-page (e.g. "Slope")
 | Layer | URL | Owner | Purpose |
 |-------|-----|-------|---------|
 | Google Sites | `sites.google.com/your-site/slope` | Google (free) | Traffic entry, search exposure, backlinks |
-| Middle page | `ug66.poki2.online/play/{slug}.html` | **You** | AdSense ads, SEO metadata |
+| Middle page | `unblocked-games-g-plus.poki2.online/play/{slug}.html` | **You** | AdSense ads, SEO metadata |
 | Game files | `unblockedgames66.gitlab.io/{slug}/` | GitLab Pages | Real game assets, correct root paths |
 
 ---
@@ -57,7 +57,7 @@ python3 scripts/gen_play_pages.py
 1. Select a **Blank** layout
 2. Insert → **Embed** → enter:
    ```
-   https://ug66.poki2.online/
+   https://unblocked-games-g-plus.poki2.online/
    ```
 3. Set embed height to `700px` (shows all 474 game cards)
 
@@ -88,7 +88,7 @@ Category pages can each embed the directory page with a hash filter (hash-filter
 
 > Generic format — replace `{slug}` with the game's slug:
 > ```html
-> <iframe src="https://ug66.poki2.online/play/{slug}.html"
+> <iframe src="https://unblocked-games-g-plus.poki2.online/play/{slug}.html"
 >         width="100%" height="700"
 >         frameborder="0"
 >         allow="fullscreen; autoplay; gamepad">
@@ -97,26 +97,26 @@ Category pages can each embed the directory page with a hash filter (hash-filter
 
 | Game | Slug | Embed URL (paste into Google Sites) | Real Game URL |
 |------|------|--------------------------------------|--------------|
-| Slope | `slope` | `https://ug66.poki2.online/play/slope.html` | `https://unblockedgames66.gitlab.io/slope/` |
-| 1v1 LOL | `1v1-lol` | `https://ug66.poki2.online/play/1v1-lol.html` | `https://unblockedgames66.gitlab.io/1v1-lol/` |
-| Geometry Dash | `geometry-dash` | `https://ug66.poki2.online/play/geometry-dash.html` | `https://unblockedgames66.gitlab.io/geometry-dash/` |
-| Run 3 | `run-3` | `https://ug66.poki2.online/play/run-3.html` | `https://unblockedgames66.gitlab.io/run-3/` |
-| Cookie Clicker | `cookie-clicker` | `https://ug66.poki2.online/play/cookie-clicker.html` | `https://unblockedgames66.gitlab.io/cookie-clicker/` |
-| Drift Hunters | `drift-hunters` | `https://ug66.poki2.online/play/drift-hunters.html` | `https://unblockedgames66.gitlab.io/drift-hunters/` |
-| Smash Karts | `smash-karts` | `https://ug66.poki2.online/play/smash-karts.html` | `https://unblockedgames66.gitlab.io/smash-karts/` |
-| Basketball Stars | `basketball-stars` | `https://ug66.poki2.online/play/basketball-stars.html` | `https://unblockedgames66.gitlab.io/basketball-stars/` |
-| Krunker.io | `krunker-io` | `https://ug66.poki2.online/play/krunker-io.html` | `https://unblockedgames66.gitlab.io/krunker-io/` |
-| Retro Bowl | `retro-bowl` | `https://ug66.poki2.online/play/retro-bowl.html` | `https://unblockedgames66.gitlab.io/retro-bowl/` |
-| Bloxd.io | `bloxd-io` | `https://ug66.poki2.online/play/bloxd-io.html` | `https://unblockedgames66.gitlab.io/bloxd-io/` |
-| OvO | `ovo` | `https://ug66.poki2.online/play/ovo.html` | `https://unblockedgames66.gitlab.io/ovo/` |
-| Among Us | `among-us` | `https://ug66.poki2.online/play/among-us.html` | `https://unblockedgames66.gitlab.io/among-us/` |
-| Minecraft Classic | `minecraft-classic` | `https://ug66.poki2.online/play/minecraft-classic.html` | `https://unblockedgames66.gitlab.io/minecraft-classic/` |
-| Happy Wheels | `happy-wheels` | `https://ug66.poki2.online/play/happy-wheels.html` | `https://unblockedgames66.gitlab.io/happy-wheels/` |
-| Flappy Bird | `flappy-bird` | `https://ug66.poki2.online/play/flappy-bird.html` | `https://unblockedgames66.gitlab.io/flappy-bird/` |
-| Vex 5 | `vex-5` | `https://ug66.poki2.online/play/vex-5.html` | `https://unblockedgames66.gitlab.io/vex-5/` |
-| Moto X3M | `moto-x3m` | `https://ug66.poki2.online/play/moto-x3m.html` | `https://unblockedgames66.gitlab.io/moto-x3m/` |
-| Shell Shockers | `shell-shockers` | `https://ug66.poki2.online/play/shell-shockers.html` | `https://unblockedgames66.gitlab.io/shell-shockers/` |
-| Subway Surfers | `subway-surfers` | `https://ug66.poki2.online/play/subway-surfers.html` | `https://unblockedgames66.gitlab.io/subway-surfers/` |
+| Slope | `slope` | `https://unblocked-games-g-plus.poki2.online/play/slope.html` | `https://unblockedgames66.gitlab.io/slope/` |
+| 1v1 LOL | `1v1-lol` | `https://unblocked-games-g-plus.poki2.online/play/1v1-lol.html` | `https://unblockedgames66.gitlab.io/1v1-lol/` |
+| Geometry Dash | `geometry-dash` | `https://unblocked-games-g-plus.poki2.online/play/geometry-dash.html` | `https://unblockedgames66.gitlab.io/geometry-dash/` |
+| Run 3 | `run-3` | `https://unblocked-games-g-plus.poki2.online/play/run-3.html` | `https://unblockedgames66.gitlab.io/run-3/` |
+| Cookie Clicker | `cookie-clicker` | `https://unblocked-games-g-plus.poki2.online/play/cookie-clicker.html` | `https://unblockedgames66.gitlab.io/cookie-clicker/` |
+| Drift Hunters | `drift-hunters` | `https://unblocked-games-g-plus.poki2.online/play/drift-hunters.html` | `https://unblockedgames66.gitlab.io/drift-hunters/` |
+| Smash Karts | `smash-karts` | `https://unblocked-games-g-plus.poki2.online/play/smash-karts.html` | `https://unblockedgames66.gitlab.io/smash-karts/` |
+| Basketball Stars | `basketball-stars` | `https://unblocked-games-g-plus.poki2.online/play/basketball-stars.html` | `https://unblockedgames66.gitlab.io/basketball-stars/` |
+| Krunker.io | `krunker-io` | `https://unblocked-games-g-plus.poki2.online/play/krunker-io.html` | `https://unblockedgames66.gitlab.io/krunker-io/` |
+| Retro Bowl | `retro-bowl` | `https://unblocked-games-g-plus.poki2.online/play/retro-bowl.html` | `https://unblockedgames66.gitlab.io/retro-bowl/` |
+| Bloxd.io | `bloxd-io` | `https://unblocked-games-g-plus.poki2.online/play/bloxd-io.html` | `https://unblockedgames66.gitlab.io/bloxd-io/` |
+| OvO | `ovo` | `https://unblocked-games-g-plus.poki2.online/play/ovo.html` | `https://unblockedgames66.gitlab.io/ovo/` |
+| Among Us | `among-us` | `https://unblocked-games-g-plus.poki2.online/play/among-us.html` | `https://unblockedgames66.gitlab.io/among-us/` |
+| Minecraft Classic | `minecraft-classic` | `https://unblocked-games-g-plus.poki2.online/play/minecraft-classic.html` | `https://unblockedgames66.gitlab.io/minecraft-classic/` |
+| Happy Wheels | `happy-wheels` | `https://unblocked-games-g-plus.poki2.online/play/happy-wheels.html` | `https://unblockedgames66.gitlab.io/happy-wheels/` |
+| Flappy Bird | `flappy-bird` | `https://unblocked-games-g-plus.poki2.online/play/flappy-bird.html` | `https://unblockedgames66.gitlab.io/flappy-bird/` |
+| Vex 5 | `vex-5` | `https://unblocked-games-g-plus.poki2.online/play/vex-5.html` | `https://unblockedgames66.gitlab.io/vex-5/` |
+| Moto X3M | `moto-x3m` | `https://unblocked-games-g-plus.poki2.online/play/moto-x3m.html` | `https://unblockedgames66.gitlab.io/moto-x3m/` |
+| Shell Shockers | `shell-shockers` | `https://unblocked-games-g-plus.poki2.online/play/shell-shockers.html` | `https://unblockedgames66.gitlab.io/shell-shockers/` |
+| Subway Surfers | `subway-surfers` | `https://unblocked-games-g-plus.poki2.online/play/subway-surfers.html` | `https://unblockedgames66.gitlab.io/subway-surfers/` |
 
 ---
 
@@ -146,7 +146,7 @@ git add docs/play && git commit -m "ads: inject AdSense units" && git push
 
 ## All 474 Game Slugs
 
-Any game is accessible at `https://ug66.poki2.online/play/{slug}.html`.
+Any game is accessible at `https://unblocked-games-g-plus.poki2.online/play/{slug}.html`.
 
 <details>
 <summary>Click to expand all 474 slugs</summary>
@@ -268,11 +268,11 @@ zombs-royale-io, zuck-vs-musk-techbro-beatdown
 |---|--------|-------|
 | 1 | Sign in to [sites.google.com](https://sites.google.com) | Use a Google account |
 | 2 | Create new site "Unblocked Games G+" | Choose a dark theme |
-| 3 | Embed `https://ug66.poki2.online/` on the homepage | Set height to 700px |
+| 3 | Embed `https://unblocked-games-g-plus.poki2.online/` on the homepage | Set height to 700px |
 | 4 | Create 20 individual game sub-pages | Copy embed codes from the table above |
 | 5 | Set up navigation bar | Home / IO Games / Shooting / Free Games |
 | 6 | Publish the site as Public | Top-right Publish button |
-| 7 | Submit sitemap in Google Search Console | `https://ug66.poki2.online/sitemap.xml` |
+| 7 | Submit sitemap in Google Search Console | `https://unblocked-games-g-plus.poki2.online/sitemap.xml` |
 | 8 | Apply for Google AdSense | Replace ad placeholders once account is approved |
 
 ---
@@ -285,4 +285,4 @@ zombs-royale-io, zuck-vs-musk-techbro-beatdown
   - `docs/play/*.html` — 474 game middle pages
   - `README.googlesite.md` — this file
 
-Once merged into `main`, GitHub Pages auto-deploys and `ug66.poki2.online/play/{slug}.html` becomes live.
+Once merged into `main`, GitHub Pages auto-deploys and `unblocked-games-g-plus.poki2.online/play/{slug}.html` becomes live.

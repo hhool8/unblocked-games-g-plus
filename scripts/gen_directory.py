@@ -76,18 +76,18 @@ def main():
 <title>474 Unblocked Games — Free Online Game Directory | Unblocked Games G+</title>
 <meta name="description" content="Browse 474 free unblocked games playable at school or work. No download needed — instant play on Chromebook and restricted networks.">
 <meta name="keywords" content="unblocked games, free online games, games at school, Unblocked Games G+, play free games">
-<link rel="canonical" href="https://ug66.poki2.online/docs/">
+<link rel="canonical" href="https://unblocked-games-g-plus.poki2.online/docs/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="474 Unblocked Games — Free Online Game Directory">
 <meta property="og:description" content="Browse 474 free unblocked games. Instant play, no login required.">
-<meta property="og:url" content="https://ug66.poki2.online/docs/">
+<meta property="og:url" content="https://unblocked-games-g-plus.poki2.online/docs/">
 <script type="application/ld+json">
 {{
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Unblocked Games G+ — Free Online Game Directory",
   "description": "474 free unblocked games playable at school or work on any device.",
-  "url": "https://ug66.poki2.online/docs/",
+  "url": "https://unblocked-games-g-plus.poki2.online/docs/",
   "publisher": {{
     "@type": "Organization",
     "name": "Unblocked Games G+",
