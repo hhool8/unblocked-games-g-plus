@@ -10,7 +10,7 @@
 | unblocked games g+ | 10K–50K | Medium-Low | **P1** | Top 3 | 品牌词，H1 + Title |
 | unblocked games g plus | 10K–50K | Medium-Low | **P1** | Top 3 | P1变体，贯穿全文 |
 | g+ unblocked games | 5K–20K | Low | **P1** | Top 5 | 倒装变体，FAQ |
-| unblocked games 66 | 100K+ | High | P2 | Top 10 | FAQ + 对比内容 |
+| Unblocked Games G+ | 100K+ | High | P2 | Top 10 | FAQ + 对比内容 |
 | games unblocked | 50K+ | High | P2 | Top 10 | Meta + 内容段 |
 | unblocked games 76 | 10K–50K | Medium | P2 | Top 10 | FAQ + 内容段 |
 | unblocked games 77 | 10K–50K | Medium | P3 | Top 20 | FAQ + 内部链接锚文本 |
@@ -57,7 +57,7 @@ Play Unblocked Games G+ — the ultimate free online game hub for students. No d
 
 > - 字符数：~155（Google截断线 155–160）
 > - 包含主词：Unblocked Games G+、free online game、students
-> - 包含次级词：No download、Chromebook、school、unblocked games 66/76/77
+> - 包含次级词：No download、Chromebook、school、Unblocked Games G+/76/77
 > - 结尾 CTA 引导点击
 
 ---
@@ -65,7 +65,7 @@ Play Unblocked Games G+ — the ultimate free online game hub for students. No d
 ### 2.3 `<meta name="keywords">` 标签
 
 ```
-unblocked games g+, unblocked games g plus, g+ unblocked games, unblocked games, games unblocked, unblocked games for school, unblocked games chromebook, unblocked games 66, unblocked games 76, unblocked games 77, free unblocked games, play games unblocked, unblocked games no download, g plus games, unblocked io games
+unblocked games g+, unblocked games g plus, g+ unblocked games, unblocked games, games unblocked, unblocked games for school, unblocked games chromebook, Unblocked Games G+, unblocked games 76, unblocked games 77, free unblocked games, play games unblocked, unblocked games no download, g plus games, unblocked io games
 ```
 
 ---
@@ -104,13 +104,13 @@ H1: Unblocked Games G+ — Play Free Games Anywhere
     H3: No Login, No Account Required
     H3: Instant Play — Just Click and Game
   H2: Top Picks on Unblocked Games G+
-  H2: How Is G+ Different from Unblocked Games 66 and 76?
-    H3: Unblocked Games G+ vs Unblocked Games 66
+  H2: How Is G+ Different from Unblocked Games G+ and 76?
+    H3: Unblocked Games G+ vs Unblocked Games G+
     H3: Unblocked Games G+ vs Unblocked Games 76
   H2: Frequently Asked Questions
     H3: What is Unblocked Games G+?
     H3: Is Unblocked Games G Plus safe for school?
-    H3: How is G+ different from unblocked games 66?
+    H3: How is G+ different from Unblocked Games G+?
     H3: Can I play g+ unblocked games on a Chromebook?
     H3: Do I need a VPN to access unblocked games g plus?
     H3: Are there unblocked games 77 alternatives on G+?
@@ -197,15 +197,15 @@ Every game on **Unblocked Games G Plus** loads in seconds. Our lightweight infra
 
 ---
 
-### H2: How Is G+ Different from Unblocked Games 66 and 76?
+### H2: How Is G+ Different from Unblocked Games G+ and 76?
 
 > 对比区，捕捉竞品关键词流量
 
-Many players searching for **unblocked games 66**, **unblocked games 76**, or **unblocked games 77** end up here — and for good reason. While those platforms are popular, Unblocked Games G+ offers several key advantages:
+Many players searching for **Unblocked Games G+**, **unblocked games 76**, or **unblocked games 77** end up here — and for good reason. While those platforms are popular, Unblocked Games G+ offers several key advantages:
 
-#### H3: Unblocked Games G+ vs Unblocked Games 66
+#### H3: Unblocked Games G+ vs Unblocked Games G+
 
-| Feature | Unblocked Games G+ | Unblocked Games 66 |
+| Feature | Unblocked Games G+ | Unblocked Games G+ |
 |---|---|---|
 | Works on Chromebook | ✅ Yes | ⚠️ Sometimes |
 | No ads / pop-ups | ✅ Clean UI | ❌ Heavy ads |
@@ -231,9 +231,9 @@ Many players searching for **unblocked games 66**, **unblocked games 76**, or **
 
 Yes. All games are carefully selected to be appropriate for student use. The platform contains no explicit content, no malware, and no deceptive ads. It is designed to be a safe, teacher-friendly gaming environment.
 
-#### H3: How is G+ different from unblocked games 66?
+#### H3: How is G+ different from Unblocked Games G+?
 
-**Unblocked Games G+** offers a cleaner ad-free experience, better Chromebook compatibility, and structured data (schema markup) that helps search engines understand each game's content. Unblocked games 66 and similar sites tend to have heavier ad loads and less mobile optimization.
+**Unblocked Games G+** offers a cleaner ad-free experience, better Chromebook compatibility, and structured data (schema markup) that helps search engines understand each game's content. Unblocked Games G+ and similar sites tend to have heavier ad loads and less mobile optimization.
 
 #### H3: Can I play g+ unblocked games on a Chromebook?
 
@@ -418,10 +418,10 @@ H1: {Game Name} Unblocked — Play Free
     },
     {
       "@type": "Question",
-      "name": "How is Unblocked Games G+ different from unblocked games 66?",
+      "name": "How is Unblocked Games G+ different from Unblocked Games G+?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Unblocked Games G+ provides a cleaner, ad-minimal experience with better Chromebook compatibility and structured data markup. Compared to unblocked games 66, G+ loads faster and is more mobile-friendly."
+        "text": "Unblocked Games G+ provides a cleaner, ad-minimal experience with better Chromebook compatibility and structured data markup. Compared to Unblocked Games G+, G+ loads faster and is more mobile-friendly."
       }
     },
     {

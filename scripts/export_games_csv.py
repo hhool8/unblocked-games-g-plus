@@ -18,7 +18,7 @@ BASE_URL = "https://unblockedgames66.gitlab.io"
 def extract(html: str, slug: str) -> dict:
     # Title: from og:title (already injected) or h1
     m = re.search(r'<meta property="og:title" content="([^"]+)"', html)
-    title = m.group(1).replace(" Unblocked — Play Free Online | Unblocked Games 66", "").strip() if m else slug.replace("-", " ").title()
+    title = m.group(1).replace(" Unblocked — Play Free Online | Unblocked Games G+", "").strip() if m else slug.replace("-", " ").title()
 
     # Category
     m = re.search(r'<div class="card-category"><a [^>]+>([^<]+)</a>', html)

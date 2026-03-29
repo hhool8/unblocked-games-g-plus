@@ -2,7 +2,7 @@
 """
 Phase 1 — Batch SEO injection for all 474 game pages
 Injects into each game/XXX.html:
-  - <title>  {Title} Unblocked — Play Free Online | Unblocked Games 66
+  - <title>  {Title} Unblocked — Play Free Online | Unblocked Games G+
   - <meta description>
   - <meta keywords>
   - Open Graph tags
@@ -67,9 +67,9 @@ def build_seo_block(slug: str, title: str, genres: list) -> str:
     thumb_url  = f"{BASE_URL}/assets/upload/66games/jpg/{slug}.jpg"
     future_url = f"https://{IND_DOMAIN_PLACEHOLDER}/game/{slug}/"
 
-    title_tag  = f"{title} Unblocked — Play Free Online | Unblocked Games 66"
+    title_tag  = f"{title} Unblocked — Play Free Online | Unblocked Games G+"
     desc_tag   = (
-        f"Play {title} unblocked for free on Unblocked Games 66. "
+        f"Play {title} unblocked for free on Unblocked Games G+. "
         "No download, no login required. Works on school Chromebook and restricted networks."
     )
     genre_csv  = ", ".join(genres)
@@ -92,7 +92,7 @@ def build_seo_block(slug: str, title: str, genres: list) -> str:
         },
         "author": {
             "@type": "Organization",
-            "name": "Unblocked Games 66"
+            "name": "Unblocked Games G+"
         }
     }
     schema_json = json.dumps(schema, ensure_ascii=False, indent=2)
@@ -101,7 +101,7 @@ def build_seo_block(slug: str, title: str, genres: list) -> str:
     <!-- FUTURE_CANONICAL: {future_url} -->
     <title>{html.escape(title_tag)}</title>
     <meta name="description" content="{html.escape(desc_tag)}" />
-    <meta name="keywords" content="{html.escape(title)} unblocked, {html.escape(title.lower())} unblocked, unblocked games 66, free unblocked games, {html.escape(genre_csv.lower())}" />
+    <meta name="keywords" content="{html.escape(title)} unblocked, {html.escape(title.lower())} unblocked, Unblocked Games G+, free unblocked games, {html.escape(genre_csv.lower())}" />
     <link rel="canonical" href="{page_url}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{html.escape(title_tag)}" />

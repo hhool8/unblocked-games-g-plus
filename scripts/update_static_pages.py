@@ -16,9 +16,9 @@ BASE_URL = "https://unblockedgames66.gitlab.io"
 PAGES = [
     {
         "path": ROOT / "privacy" / "index.html",
-        "title": "Privacy Policy — Unblocked Games 66",
+        "title": "Privacy Policy — Unblocked Games G+",
         "description": (
-            "Read the Privacy Policy for Unblocked Games 66. Learn how we collect, use, "
+            "Read the Privacy Policy for Unblocked Games G+. Learn how we collect, use, "
             "and protect your data when you visit our free unblocked games site."
         ),
         "canonical": f"{BASE_URL}/privacy/",
@@ -26,9 +26,9 @@ PAGES = [
     },
     {
         "path": ROOT / "terms" / "index.html",
-        "title": "Terms and Conditions — Unblocked Games 66",
+        "title": "Terms and Conditions — Unblocked Games G+",
         "description": (
-            "Review the Terms and Conditions for using Unblocked Games 66. "
+            "Review the Terms and Conditions for using Unblocked Games G+. "
             "By accessing our site you agree to these terms governing free browser-based gaming."
         ),
         "canonical": f"{BASE_URL}/terms/",
@@ -36,9 +36,9 @@ PAGES = [
     },
     {
         "path": ROOT / "contact" / "index.html",
-        "title": "Contact Us — Unblocked Games 66",
+        "title": "Contact Us — Unblocked Games G+",
         "description": (
-            "Get in touch with Unblocked Games 66. Submit a game request, report an issue, "
+            "Get in touch with Unblocked Games G+. Submit a game request, report an issue, "
             "or send us feedback — we'd love to hear from you."
         ),
         "canonical": f"{BASE_URL}/contact/",
@@ -78,8 +78,8 @@ def process_page(cfg: dict):
     content = re.sub(r'(</head>)', f"{seo_head}\\1", content, count=1, flags=re.IGNORECASE)
 
     # 3. Fix wrong domain references left over from template copy-paste
-    content = content.replace("76GAMES.io", "Unblocked Games 66")
-    content = content.replace("in 76GAMES.io", "on Unblocked Games 66")
+    content = content.replace("76GAMES.io", "Unblocked Games G+")
+    content = content.replace("in 76GAMES.io", "on Unblocked Games G+")
 
     path.write_text(content, encoding="utf-8")
     print(f"  ✓ {path.parent.name}/index.html — SEO header injected")

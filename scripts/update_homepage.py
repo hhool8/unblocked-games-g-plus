@@ -15,14 +15,14 @@ ROOT      = Path(__file__).parent.parent
 INDEX     = ROOT / "index.html"
 BASE_URL  = "https://unblockedgames66.gitlab.io"
 
-TITLE       = "Unblocked Games 66 — Play Free Games Unblocked at School"
+TITLE       = "Unblocked Games G+ — Play Free Games Unblocked at School"
 DESCRIPTION = (
-    "Play Unblocked Games 66 — the ultimate free online game hub for students. "
+    "Play Unblocked Games G+ — the ultimate free online game hub for students. "
     "No download, no VPN needed. Enjoy 474 unblocked games on Chromebook, at school, "
     "or anywhere. Play now, no login required!"
 )
 KEYWORDS = (
-    "unblocked games 66, unblocked games, games unblocked, unblocked games for school, "
+    "Unblocked Games G+, unblocked games, games unblocked, unblocked games for school, "
     "unblocked games chromebook, free unblocked games, play games unblocked, "
     "unblocked games no download, unblocked io games, cool math games unblocked"
 )
@@ -30,7 +30,7 @@ KEYWORDS = (
 WEBSITE_SCHEMA = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Unblocked Games 66",
+    "name": "Unblocked Games G+",
     "url": f"{BASE_URL}/",
     "description": "Play 474 free unblocked games at school on Chromebook — no download, no VPN needed.",
     "potentialAction": {
@@ -49,15 +49,15 @@ FAQPAGE_SCHEMA = {
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "What is Unblocked Games 66?",
+            "name": "What is Unblocked Games G+?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Unblocked Games 66 is a free browser-based gaming platform with 474 online games accessible on school networks, Chromebook, and restricted Wi-Fi — no download or account required."
+                "text": "Unblocked Games G+ is a free browser-based gaming platform with 474 online games accessible on school networks, Chromebook, and restricted Wi-Fi — no download or account required."
             }
         },
         {
             "@type": "Question",
-            "name": "Is Unblocked Games 66 safe for school?",
+            "name": "Is Unblocked Games G+ safe for school?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Yes. All games are curated for age-appropriateness. The site has no malware or deceptive ads and is designed to be safe for students on school networks."
@@ -65,7 +65,7 @@ FAQPAGE_SCHEMA = {
         },
         {
             "@type": "Question",
-            "name": "Can I play Unblocked Games 66 on a Chromebook?",
+            "name": "Can I play Unblocked Games G+ on a Chromebook?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Yes. Every game runs in the browser with no plugins or extensions required, making all titles fully compatible with Chrome OS and school-managed Chromebooks."
@@ -73,26 +73,26 @@ FAQPAGE_SCHEMA = {
         },
         {
             "@type": "Question",
-            "name": "Do I need a VPN to access Unblocked Games 66?",
+            "name": "Do I need a VPN to access Unblocked Games G+?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No VPN is needed. Unblocked Games 66 is hosted to remain accessible on most school and work networks directly from your browser."
+                "text": "No VPN is needed. Unblocked Games G+ is hosted to remain accessible on most school and work networks directly from your browser."
             }
         },
         {
             "@type": "Question",
-            "name": "How many games are on Unblocked Games 66?",
+            "name": "How many games are on Unblocked Games G+?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Unblocked Games 66 currently features 474 browser games across action, puzzle, sports, racing, IO, and more genres. New games are added regularly."
+                "text": "Unblocked Games G+ currently features 474 browser games across action, puzzle, sports, racing, IO, and more genres. New games are added regularly."
             }
         },
         {
             "@type": "Question",
-            "name": "Are the games on Unblocked Games 66 free?",
+            "name": "Are the games on Unblocked Games G+ free?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, all games on Unblocked Games 66 are completely free to play. No subscription, no login, no payment of any kind is required."
+                "text": "Yes, all games on Unblocked Games G+ are completely free to play. No subscription, no login, no payment of any kind is required."
             }
         }
     ]
@@ -102,12 +102,12 @@ SEO_CONTENT = """
 <!-- SEO semantic section — injected by scripts/update_homepage.py -->
 <section class="container-fluid py-5 mt-4" id="seo-content" style="border-top:1px solid var(--bs-border-color)">
   <div class="container">
-    <h2 class="h4 mb-3">What Is Unblocked Games 66?</h2>
+    <h2 class="h4 mb-3">What Is Unblocked Games G+?</h2>
     <p>
-      <strong>Unblocked Games 66</strong> is a free online gaming platform for students,
+      <strong>Unblocked Games G+</strong> is a free online gaming platform for students,
       office workers, and casual gamers who face content restrictions on their networks.
       Whether your school blocks entertainment websites or your workplace IT policy prevents
-      gaming, Unblocked Games 66 provides seamless access to <strong>474 browser-based
+      gaming, Unblocked Games G+ provides seamless access to <strong>474 browser-based
       games</strong> — no VPN, no download, no accounts required. Just open your browser,
       click a game, and play.
     </p>
@@ -146,12 +146,12 @@ SEO_CONTENT = """
         <h3 class="accordion-header">
           <button class="accordion-button collapsed px-0 bg-transparent" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq1">
-            What is Unblocked Games 66?
+            What is Unblocked Games G+?
           </button>
         </h3>
         <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
           <div class="accordion-body px-0">
-            Unblocked Games 66 is a free browser-based gaming platform with 474 online games accessible
+            Unblocked Games G+ is a free browser-based gaming platform with 474 online games accessible
             on school networks, Chromebook, and restricted Wi-Fi — no download or account required.
           </div>
         </div>
@@ -161,7 +161,7 @@ SEO_CONTENT = """
         <h3 class="accordion-header">
           <button class="accordion-button collapsed px-0 bg-transparent" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq2">
-            Is Unblocked Games 66 safe for school?
+            Is Unblocked Games G+ safe for school?
           </button>
         </h3>
         <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
@@ -196,7 +196,7 @@ SEO_CONTENT = """
         </h3>
         <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
           <div class="accordion-body px-0">
-            No VPN needed. Unblocked Games 66 is hosted to remain accessible on most school and
+            No VPN needed. Unblocked Games G+ is hosted to remain accessible on most school and
             work networks directly from your browser.
           </div>
         </div>

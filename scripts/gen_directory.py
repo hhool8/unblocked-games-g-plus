@@ -73,9 +73,9 @@ def main():
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>474 Unblocked Games — Free Online Game Directory | Unblocked Games 66</title>
+<title>474 Unblocked Games — Free Online Game Directory | Unblocked Games G+</title>
 <meta name="description" content="Browse 474 free unblocked games playable at school or work. No download needed — instant play on Chromebook and restricted networks.">
-<meta name="keywords" content="unblocked games, free online games, games at school, unblocked games 66, play free games">
+<meta name="keywords" content="unblocked games, free online games, games at school, Unblocked Games G+, play free games">
 <link rel="canonical" href="https://ug66.poki2.online/docs/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="474 Unblocked Games — Free Online Game Directory">
@@ -85,12 +85,12 @@ def main():
 {{
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Unblocked Games 66 — Free Online Game Directory",
+  "name": "Unblocked Games G+ — Free Online Game Directory",
   "description": "474 free unblocked games playable at school or work on any device.",
   "url": "https://ug66.poki2.online/docs/",
   "publisher": {{
     "@type": "Organization",
-    "name": "Unblocked Games 66",
+    "name": "Unblocked Games G+",
     "url": "{GSITE_URL}"
   }}
 }}
@@ -145,7 +145,7 @@ footer a{{color:#e74c3c;text-decoration:none}}
   </div>
 </div>
 <header>
-  <h1>🎮 Unblocked Games 66</h1>
+  <h1>🎮 Unblocked Games G+</h1>
   <p>474 free games — play instantly at school, work, or anywhere. No download, no login.</p>
 </header>
 <div class="filters">
@@ -155,7 +155,7 @@ footer a{{color:#e74c3c;text-decoration:none}}
 {cards_html}
 </div>
 <footer>
-  <p>Game directory linking to <a href="{GSITE_URL}" target="_blank" rel="noopener">unblockedgames66.gitlab.io</a> — © 2026 Unblocked Games 66</p>
+  <p>Game directory linking to <a href="{GSITE_URL}" target="_blank" rel="noopener">unblockedgames66.gitlab.io</a> — © 2026 Unblocked Games G+</p>
 </footer>
 <script>
 // ── Category filter ──

@@ -1,4 +1,4 @@
-# Google Sites Build Guide — Unblocked Games 66
+# Google Sites Build Guide — Unblocked Games G+
 
 > Reference site: [classroom.center](https://sites.google.com/classroom.center/view-1/)  
 > Goal: Google Sites acts as a traffic entry point and SEO satellite. The actual game content lives on GitHub Pages (your own infrastructure), giving you full control over ad placement.
@@ -49,7 +49,7 @@ python3 scripts/gen_play_pages.py
 ### Step 1 — Create the site
 
 1. Go to [sites.google.com](https://sites.google.com) → click **+** New site
-2. Name: `Unblocked Games 66` (or your choice)
+2. Name: `Unblocked Games G+` (or your choice)
 3. Theme: choose a dark theme
 
 ### Step 2 — Set up the homepage
@@ -267,7 +267,7 @@ zombs-royale-io, zuck-vs-musk-techbro-beatdown
 | # | Action | Notes |
 |---|--------|-------|
 | 1 | Sign in to [sites.google.com](https://sites.google.com) | Use a Google account |
-| 2 | Create new site "Unblocked Games 66" | Choose a dark theme |
+| 2 | Create new site "Unblocked Games G+" | Choose a dark theme |
 | 3 | Embed `https://ug66.poki2.online/` on the homepage | Set height to 700px |
 | 4 | Create 20 individual game sub-pages | Copy embed codes from the table above |
 | 5 | Set up navigation bar | Home / IO Games / Shooting / Free Games |
