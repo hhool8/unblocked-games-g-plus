@@ -70,7 +70,9 @@ body{background:#0f0f1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFo
   window.goFS = function(){
     var el = document.documentElement;
     var fn = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
-    if (fn) fn.call(el);
+    if (!fn) { window.open(location.href,'_blank'); return; }
+    var p = fn.call(el);
+    if (p && p.catch) p.catch(function(){ window.open(location.href,'_blank'); });
   };
 })();
 </script>
