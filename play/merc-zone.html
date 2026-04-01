@@ -34,10 +34,10 @@ body{background:#0f0f1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFo
   <div class="ad-placeholder" id="ad-top">ADVERTISEMENT</div>
 </div>
 
-<div class="bar">
-  <h1>MERC ZONE - Unblocked Games G+</h1>
-  <button class="btn-fs" onclick="goFS()">&#9974; Fullscreen</button>
-  <a class="ext" href="https://unblocked-games-g-plus.poki2.online/game/merc-zone.html" target="_blank" rel="noopener">Open ↗</a>
+<div class="bar" id="topBar">
+  <h1 id="gameTitle">MERC ZONE - Unblocked Games G+</h1>
+  <button class="btn-fs" id="btnFullscreen" onclick="goFS()">&#9974; Fullscreen</button>
+  <a class="ext" id="btnOpen" href="https://unblocked-games-g-plus.poki2.online/game/merc-zone.html" target="_blank" rel="noopener">Open ↗</a>
 </div>
 
 <div class="game-wrap" id="gwrap">
@@ -56,10 +56,28 @@ body{background:#0f0f1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFo
 
 <script>
 (function(){
+  var params = new URLSearchParams(window.location.search);
+  var topBar = document.getElementById('topBar');
+  var gameTitle = document.getElementById('gameTitle');
+  var btnFullscreen = document.getElementById('btnFullscreen');
+  var btnOpen = document.getElementById('btnOpen');
+
+  function shouldHideByParam(key){
+    var value = (params.get(key) || '').toLowerCase();
+    return value === '0' || value === 'false' || value === 'no' || value === 'hide';
+  }
+
+  // Default is visible for all controls.
+  if (topBar && shouldHideByParam('bar')) topBar.style.display = 'none';
+  if (gameTitle && shouldHideByParam('title')) gameTitle.style.display = 'none';
+  if (btnFullscreen && shouldHideByParam('fullscreen')) btnFullscreen.style.display = 'none';
+  if (btnOpen && shouldHideByParam('open')) btnOpen.style.display = 'none';
+
   // Make game-wrap fill remaining viewport height
   function resize(){
-    var used = document.querySelector('.ad-wrap').offsetHeight * 2
-              + document.querySelector('.bar').offsetHeight;
+    var firstAd = document.querySelector('.ad-wrap');
+    var used = (firstAd ? firstAd.offsetHeight * 2 : 0)
+              + (topBar ? topBar.offsetHeight : 0);
     document.getElementById('gwrap').style.height =
       Math.max(380, window.innerHeight - used) + 'px';
   }

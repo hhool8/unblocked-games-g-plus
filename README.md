@@ -135,6 +135,30 @@ python3 fix_technical_seo.py
 6. Run `python3 scripts/update_homepage.py` to refresh featured games.
 7. Update `sitemap.xml` with the new URL (see [Maintenance](#maintenance)).
 
+### Play Page UI Parameters
+
+All pages in `play/*.html` support query parameters to control top bar visibility.
+
+- Default behavior: all UI elements are visible.
+- Supported keys: `bar`, `title`, `fullscreen`, `open`.
+- Hide values: `0`, `false`, `no`, `hide`.
+
+Examples:
+
+```text
+/play/1v1-lol.html
+/play/1v1-lol.html?title=0
+/play/1v1-lol.html?fullscreen=false&open=no
+/play/1v1-lol.html?bar=hide
+```
+
+Notes:
+
+- `bar` controls the entire top `<div class="bar">`.
+- `title` controls the game title text.
+- `fullscreen` controls the Fullscreen button.
+- `open` controls the Open link.
+
 ---
 
 ## Content Pipeline (Operations)
