@@ -3,66 +3,66 @@
 
 ---
 
-## 一、关键词策略总表
+## 1. Keyword Strategy Overview
 
-| 关键词 | 月搜索量 | 竞争度 | 优先级 | 目标排名 | 用途 |
+| Keyword | Monthly Volume | Competition | Priority | Target Rank | Use Case |
 |---|---|---|---|---|---|
-| unblocked games g+ | 10K–50K | Medium-Low | **P1** | Top 3 | 品牌词，H1 + Title |
-| unblocked games g plus | 10K–50K | Medium-Low | **P1** | Top 3 | P1变体，贯穿全文 |
-| g+ unblocked games | 5K–20K | Low | **P1** | Top 5 | 倒装变体，FAQ |
-| Unblocked Games G+ | 100K+ | High | P2 | Top 10 | FAQ + 对比内容 |
-| games unblocked | 50K+ | High | P2 | Top 10 | Meta + 内容段 |
-| unblocked games 76 | 10K–50K | Medium | P2 | Top 10 | FAQ + 内容段 |
-| unblocked games 77 | 10K–50K | Medium | P3 | Top 20 | FAQ + 内部链接锚文本 |
-| unblocked games for school | 20K–50K | Medium | P2 | Top 10 | H2 + 内容段 |
+| unblocked games g+ | 10K–50K | Medium-Low | **P1** | Top 3 | Brand term, H1 + Title |
+| unblocked games g plus | 10K–50K | Medium-Low | **P1** | Top 3 | P1 variant, used throughout |
+| g+ unblocked games | 5K–20K | Low | **P1** | Top 5 | Inverted variant, FAQ |
+| Unblocked Games G+ | 100K+ | High | P2 | Top 10 | FAQ + comparison content |
+| games unblocked | 50K+ | High | P2 | Top 10 | Meta + content sections |
+| unblocked games 76 | 10K–50K | Medium | P2 | Top 10 | FAQ + content section |
+| unblocked games 77 | 10K–50K | Medium | P3 | Top 20 | FAQ + internal link anchor text |
+| unblocked games for school | 20K–50K | Medium | P2 | Top 10 | H2 + content section |
 | unblocked games chromebook | 10K–30K | Medium-Low | P2 | Top 10 | H3 + product feature |
-| play games unblocked | 5K–20K | Low | P2 | Top 5 | CTA文案 |
+| play games unblocked | 5K–20K | Low | P2 | Top 5 | CTA copy |
 | free unblocked games | 20K–50K | Medium | P2 | Top 10 | Meta description |
 | unblocked games no download | 5K–10K | Low | P3 | Top 10 | H3 feature item |
-| g plus games | 3K–10K | Low | P3 | Top 5 | 长尾，FAQ |
-| unblocked io games | 5K–20K | Medium | P3 | Top 20 | 游戏分类页 |
+| g plus games | 3K–10K | Low | P3 | Top 5 | Long-tail, FAQ |
+| unblocked io games | 5K–20K | Medium | P3 | Top 20 | Game category pages |
 
 ---
 
-## 二、首页 (Homepage) SEO 内容规范
+## 2. Homepage SEO Content Specification
 
-### 2.1 `<title>` 标签
+### 2.1 `<title>` Tag
 
 ```
 Unblocked Games G+ — Play Free Games Unblocked at School
 ```
 
-> - 主关键词 "Unblocked Games G+" 置于最前
-> - 包含 "Play Free" 提升点击意愿
-> - "at School" 精准匹配用户场景
-> - 字符数：57（范围 50–60 最佳）
+> - Primary keyword "Unblocked Games G+" placed first
+> - "Play Free" improves click intent
+> - "at School" precisely matches user scenario
+> - Character count: 57 (optimal range: 50–60)
 
-**备用方案 A（情景词更强）:**
+**Alt A (stronger situational keywords):**
 ```
 Unblocked Games G Plus — Free Online Games for School & Chromebook
 ```
 
-**备用方案 B（含数字，CTR更高）:**
+**Alt B (higher CTR with number):**
 ```
 Unblocked Games G+ | 1000+ Free Games, No Download, No Block
 ```
 
 ---
 
-### 2.2 `<meta name="description">` 标签
+### 2.2 `<meta name="description">` Tag
 
 ```
 Play Unblocked Games G+ — the ultimate free online game hub for students. No download, no VPN needed. Enjoy hundreds of unblocked games on Chromebook, at school, or anywhere. Games unblocked 66, 76, 77 and more — all in one place!
 ```
 
-> - 字符数：~155（Google截断线 155–160）
-> - 包含主词：Unblocked Games G+、free online game、students
-> - 包含次级词：No download、Chromebook、school、Unblocked Games G+/76/77
-> - 结尾 CTA 引导点击
+> - Character count: ~155 (Google truncation line: 155–160)
+> - Contains primary: Unblocked Games G+, free online game, students
+> - Contains secondary: No download, Chromebook, school, Unblocked Games G+/76/77
+> - CTA at the end to drive click-through
 
 ---
 
-### 2.3 `<meta name="keywords">` 标签
+### 2.3 `<meta name="keywords">` Tag
 
 ```
 unblocked games g+, unblocked games g plus, g+ unblocked games, unblocked games, games unblocked, unblocked games for school, unblocked games chromebook, Unblocked Games G+, unblocked games 76, unblocked games 77, free unblocked games, play games unblocked, unblocked games no download, g plus games, unblocked io games
@@ -78,7 +78,6 @@ unblocked games g+, unblocked games g plus, g+ unblocked games, unblocked games,
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://YOUR-DOMAIN/" />
 <meta property="og:image" content="https://YOUR-DOMAIN/assets/og-cover.jpg" />
-
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Unblocked Games G+ — Play Free Games Unblocked at School" />
 <meta name="twitter:description" content="Hundreds of free unblocked games for school & Chromebook. No download, no VPN needed." />
@@ -88,7 +87,7 @@ unblocked games g+, unblocked games g plus, g+ unblocked games, unblocked games,
 
 ---
 
-## 三、首页 H标签完整层级
+## 3. Homepage Heading Hierarchy (Full)
 
 ```
 H1: Unblocked Games G+ — Play Free Games Anywhere
@@ -119,22 +118,22 @@ H1: Unblocked Games G+ — Play Free Games Anywhere
 
 ---
 
-## 四、首页正文内容（完整 Body Copy）
+## 4. Homepage Body Copy (Complete)
 
-### H1 — 主标题
+### H1 — Main Title
 
 ```
 Unblocked Games G+ — Play Free Games Anywhere
 ```
 
-> 副标题 / tagline（显示在 H1 下方）：
+> Subtitle / tagline (displayed below H1):
 > *"The #1 destination for unblocked games at school, at home, and on Chromebook."*
 
 ---
 
 ### H2: What Is Unblocked Games G+?
 
-> 推荐字数：300–400 words
+> Recommended word count: 300–400 words
 
 Unblocked Games G+ (also known as Unblocked Games G Plus) is a free online gaming platform created for students, office workers, and casual gamers who face content restrictions on their networks. Whether your school blocks entertainment websites or your workplace IT policy prevents gaming, Unblocked Games G+ provides seamless access to hundreds of browser-based games — no VPN, no download, no accounts required.
 
@@ -156,7 +155,7 @@ Unblocked Games G+ (also known as Unblocked Games G Plus) is a free online gamin
 
 ### H2: Why Unblocked Games G Plus Stands Out
 
-> 推荐字数：400–500 words
+> Recommended word count: 400–500 words
 
 #### H3: A Massive Game Library for Every Taste
 
@@ -182,7 +181,7 @@ Every game on **Unblocked Games G Plus** loads in seconds. Our lightweight infra
 
 ### H2: Top Picks on Unblocked Games G+
 
-> 推荐以 card list 方式呈现，每条 1–2 句
+> Present as card list, 1–2 sentences per entry.
 
 | Game | Genre | Why You'll Love It |
 |---|---|---|
@@ -199,7 +198,7 @@ Every game on **Unblocked Games G Plus** loads in seconds. Our lightweight infra
 
 ### H2: How Is G+ Different from Unblocked Games G+ and 76?
 
-> 对比区，捕捉竞品关键词流量
+> Comparison section — capture competitor keyword traffic.
 
 Many players searching for **Unblocked Games G+**, **unblocked games 76**, or **unblocked games 77** end up here — and for good reason. While those platforms are popular, Unblocked Games G+ offers several key advantages:
 
@@ -221,7 +220,7 @@ Many players searching for **Unblocked Games G+**, **unblocked games 76**, or **
 
 ### H2: Frequently Asked Questions
 
-> FAQ Schema 候选，每个问答 50–100 words
+> FAQ Schema candidates — 50–100 words per Q&A.
 
 #### H3: What is Unblocked Games G+?
 
@@ -251,7 +250,7 @@ Yes! If you've been playing **unblocked games 77** and want more options, Unbloc
 
 ### H2: Start Playing Now
 
-> CTA 区（50–100 words）
+> CTA section (50–100 words)
 
 Ready to play? No sign-up, no download, no limits. Unblocked Games G+ is the smartest, safest way to game at school, on your Chromebook, or anywhere restrictions usually stand in your way. Browse our full library of **free unblocked games**, pick a title, and start playing in seconds. Bookmark this page so you're always one click away from fun.
 
@@ -259,11 +258,11 @@ Ready to play? No sign-up, no download, no limits. Unblocked Games G+ is the sma
 
 ---
 
-## 五、分类页 SEO 规范（Category Pages）
+## 5. Category Pages SEO Specification
 
-### 5.1 动作游戏（Action）
+### 5.1 Action Games
 
-| 元素 | 内容 |
+| Element | Content |
 |---|---|
 | URL | `/action-games/` |
 | `<title>` | `Unblocked Action Games — Play Free Online \| Unblocked Games G+` |
@@ -272,9 +271,9 @@ Ready to play? No sign-up, no download, no limits. Unblocked Games G+ is the sma
 | H2 | `Top Action Games on Unblocked Games G Plus` |
 | H2 | `Why Play Action Games Here?` |
 
-### 5.2 益智游戏（Puzzle）
+### 5.2 Puzzle Games
 
-| 元素 | 内容 |
+| Element | Content |
 |---|---|
 | URL | `/puzzle-games/` |
 | `<title>` | `Unblocked Puzzle Games — Brain Games Free Online \| Unblocked Games G+` |
@@ -282,18 +281,18 @@ Ready to play? No sign-up, no download, no limits. Unblocked Games G+ is the sma
 | H1 | `Unblocked Puzzle Games — Train Your Brain for Free` |
 | H2 | `Most Popular Puzzle Games Unblocked` |
 
-### 5.3 体育游戏（Sports）
+### 5.3 Sports Games
 
-| 元素 | 内容 |
+| Element | Content |
 |---|---|
 | URL | `/sports-games/` |
 | `<title>` | `Unblocked Sports Games — Basketball, Soccer & More \| Unblocked Games G+` |
 | Meta Description | `Score big with free unblocked sports games! Basketball Stars, Soccer Physics, and more — all playable on school Chromebook without download. Unblocked Games G+.` |
 | H1 | `Unblocked Sports Games — Play Free Online` |
 
-### 5.4 IO游戏（.IO Games）
+### 5.4 IO Games (.io)
 
-| 元素 | 内容 |
+| Element | Content |
 |---|---|
 | URL | `/io-games/` |
 | `<title>` | `Unblocked IO Games — Play .io Games Free at School \| Unblocked Games G+` |
@@ -302,33 +301,33 @@ Ready to play? No sign-up, no download, no limits. Unblocked Games G+ is the sma
 
 ---
 
-## 六、游戏详情页 SEO 模板（Game Detail Page Template）
+## 6. Game Detail Page SEO Template
 
 ### URL Structure
 ```
 /game/{game-slug}/
 ```
-示例：`/game/minecraft-classic/`、`/game/happy-wheels/`、`/game/run-3/`
+Example: `/game/minecraft-classic/`, `/game/happy-wheels/`, `/game/run-3/`
 
-### Title 模板
+### Title Template
 ```
 {Game Name} Unblocked — Play Free Online | Unblocked Games G+
 ```
-示例：
+Example:
 ```
 Minecraft Classic Unblocked — Play Free Online | Unblocked Games G+
 ```
 
-### Meta Description 模板
+### Meta Description Template
 ```
 Play {Game Name} unblocked for free on Unblocked Games G+. No download, no login. Works on school Chromebook and restricted networks. {1-sentence game hook}.
 ```
-示例：
+Example:
 ```
 Play Minecraft Classic unblocked for free on Unblocked Games G+. No download, no login. Works on school Chromebook. Build, survive, and explore the original block world in your browser.
 ```
 
-### H 标签层级（游戏详情页）
+### Heading Hierarchy (Game Detail Page)
 ```
 H1: {Game Name} Unblocked — Play Free
   H2: How to Play {Game Name}
@@ -339,7 +338,7 @@ H1: {Game Name} Unblocked — Play Free
   H2: Why Play {Game Name} on Unblocked Games G+?
 ```
 
-### JSON-LD Schema（VideoGame / GameApplication）
+### JSON-LD Schema (VideoGame / GameApplication)
 
 ```json
 {
@@ -367,7 +366,7 @@ H1: {Game Name} Unblocked — Play Free
 
 ---
 
-## 七、网站级 Schema（Homepage WebSite + SearchAction）
+## 7. Site-Level Schema (WebSite + SearchAction)
 
 ```json
 {
@@ -438,9 +437,9 @@ H1: {Game Name} Unblocked — Play Free
 
 ---
 
-## 八、内部链接策略
+## 8. Internal Linking Strategy
 
-| 从（Source Page） | 到（Target Page） | 锚文本 |
+| From (Source Page) | To (Target Page) | Anchor Text |
 |---|---|---|
 | Homepage | `/action-games/` | "play unblocked action games" |
 | Homepage | `/puzzle-games/` | "free unblocked puzzle games" |
@@ -455,24 +454,24 @@ H1: {Game Name} Unblocked — Play Free
 
 ---
 
-## 九、竞品差异化分析
+## 9. Competitor Differentiation Analysis
 
-| 指标 | 竞品 (bitbucket.io) | 我们的目标 |
+| Metric | Competitor (bitbucket.io) | Our Target |
 |---|---|---|
-| H1 关键词 | "UNBLOCKED GAMES G+" (全大写，无副标题) | 含副标题、场景词 "at School / Chromebook" |
-| Schema 标记 | ❌ 未见结构化数据 | ✅ WebSite + FAQPage + VideoGame on every page |
-| FAQ 内容 | ❌ 无 FAQ | ✅ 6+ FAQ entries with FAQPage schema |
-| 对比竞品内容 | ❌ 无 | ✅ G+ vs 66, G+ vs 76 对比表 |
-| 分类页 | ⚠️ 仅标签式 | ✅ 独立 URL + 完整 meta/H 标签 |
-| 游戏详情页 | ⚠️ 无说明文字 | ✅ How-to-Play + About + Schema |
-| 内部链接 | ⚠️ 极少 | ✅ 每个游戏页 3 条相关游戏链接 |
-| 加载速度 | ⚠️ 无优化依据 | ✅ 自托管字体（woff2），Preconnect，lazy-load |
+| H1 Keyword | "UNBLOCKED GAMES G+" (all caps, no subtitle) | Includes subtitle + situational words "at School / Chromebook" |
+| Schema Markup | ❌ No structured data | ✅ WebSite + FAQPage + VideoGame on every page |
+| FAQ Content | ❌ No FAQ | ✅ 6+ FAQ entries with FAQPage schema |
+| Competitor Comparison | ❌ None | ✅ G+ vs 66, G+ vs 76 comparison tables |
+| Category Pages | ⚠️ Tag-style only | ✅ Dedicated URLs + full meta/heading tags |
+| Game Detail Pages | ⚠️ No descriptive text | ✅ How-to-Play + About + Schema |
+| Internal Linking | ⚠️ Very sparse | ✅ 3 related game links on every game page |
+| Load Speed | ⚠️ No optimization evidence | ✅ Self-hosted fonts (woff2), Preconnect, lazy-load |
 
 ---
 
-## 十、支持页面 SEO 最低要求
+## 10. Support Pages — SEO Minimum Requirements
 
-| 页面 | Title | H1 |
+| Page | Title | H1 |
 |---|---|---|
 | `/about/` | `About Unblocked Games G+ — Our Mission` | `About Unblocked Games G Plus` |
 | `/contact/` | `Contact Us — Unblocked Games G+` | `Get in Touch with Unblocked Games G+` |
@@ -482,17 +481,17 @@ H1: {Game Name} Unblocked — Play Free
 
 ---
 
-## 十一、技术 SEO Checklist
+## 11. Technical SEO Checklist
 
-- [ ] `robots.txt`：允许所有，`Disallow: /embed/`，指向 `sitemap.xml`
-- [ ] `sitemap.xml`：含首页 + 所有游戏页 + 分类页，`lastmod` + 优先级权重
-- [ ] 所有页面 `<link rel="canonical">` 使用绝对 URL
-- [ ] 所有页面 `og:url` 使用绝对 URL
-- [ ] Google Analytics 4（GA4）部署到所有页面
-- [ ] Core Web Vitals（LCP/CLS/INP）作为自定义 GA4 事件上报
-- [ ] Google Search Console 验证 + sitemap 提交
-- [ ] 字体自托管 woff2（latin subset），避免 Google Fonts 阻塞渲染
-- [ ] 游戏 iframe 使用 `loading="lazy"`
-- [ ] 游戏封面图 `<img>` 带有 `alt="{Game Name} unblocked game"`
-- [ ] `<html lang="en">`
-- [ ] HTTPS 全站启用
+- [ ] `robots.txt`: allow all, `Disallow: /embed/`, point to `sitemap.xml`
+- [ ] `sitemap.xml`: include homepage + all game pages + category pages, with `lastmod` + priority weights
+- [ ] All pages must have `<link rel="canonical">` with absolute URLs
+- [ ] All pages must have `og:url` with absolute URLs
+- [ ] Google Analytics 4 (GA4) deployed on all pages
+- [ ] Core Web Vitals (LCP/CLS/INP) reported as custom GA4 events
+- [ ] Google Search Console verified + sitemap submitted
+- [ ] Self-hosted fonts in woff2 format (latin subset) to avoid Google Fonts render-blocking
+- [ ] Game iframes use `loading="lazy"`
+- [ ] Game cover images use `alt="{Game Name} unblocked game"`
+- [ ] `<html lang="en">` on all pages
+- [ ] HTTPS enabled site-wide
