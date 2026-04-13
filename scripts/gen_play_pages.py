@@ -55,12 +55,12 @@ def make_page(slug, game_url, title, desc):
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <title>{safe_title}</title>
 <meta name="description" content="{safe_desc}">
-<link rel="canonical" href="{SITE}/play/{slug}.html">
+<link rel="canonical" href="{SITE}/game/{slug}.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{safe_title}">
 <meta property="og:description" content="{safe_desc}">
 <meta property="og:image" content="{thumb}">
-<meta property="og:url" content="{SITE}/play/{slug}.html">
+<meta property="og:url" content="{SITE}/game/{slug}.html">
 <meta name="twitter:card" content="summary_large_image">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
