@@ -21,7 +21,7 @@ BASE     = Path(__file__).parent.parent
 GAME_DIR = BASE / "game"
 OUT_DIR  = BASE / "play"
 SITE     = "https://unblocked-games-g-plus.poki2.online"
-GITLAB   = "https://unblockedgames66.gitlab.io"
+GITLAB   = "https://unblocked-games-g-plus.poki2.online"
 
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

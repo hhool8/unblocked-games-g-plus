@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 gen_directory.py
-Generate docs/index.html — a static game directory page hosted on GitHub Pages.
-474 game cards linking to unblockedgames66.gitlab.io (cross-domain external links).
+Generate docs/index.html — a static game directory page on the main domain.
+474 game cards linking to unblocked-games-g-plus.poki2.online.
 """
 
 import csv
@@ -14,7 +14,7 @@ CSV = BASE / "scripts" / "games_for_gsite.csv"
 OUT = BASE / "docs" / "index.html"
 OUT.parent.mkdir(exist_ok=True)
 
-GSITE_URL = "https://unblockedgames66.gitlab.io"
+GSITE_URL = "https://unblocked-games-g-plus.poki2.online"
 
 CATEGORY_COLORS = {
     "66-Ez Games":     "#e74c3c",
@@ -155,7 +155,7 @@ footer a{{color:#e74c3c;text-decoration:none}}
 {cards_html}
 </div>
 <footer>
-  <p>Game directory linking to <a href="{GSITE_URL}" target="_blank" rel="noopener">unblockedgames66.gitlab.io</a> — © 2026 Unblocked Games G+</p>
+  <p>Game directory linking to <a href="{GSITE_URL}" target="_blank" rel="noopener">unblocked-games-g-plus.poki2.online</a> — © 2026 Unblocked Games G+</p>
 </footer>
 <script>
 // ── Category filter ──

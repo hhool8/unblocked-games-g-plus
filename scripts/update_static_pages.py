@@ -4,14 +4,14 @@ Phase 3 — Static pages SEO update
 Operates on: privacy/index.html, terms/index.html, contact/index.html
 - Replace weak <title> and <meta description>
 - Inject canonical, OG tags
-- Fix wrong domain references inside page content ("76GAMES.io" → "unblockedgames66.gitlab.io")
+- Refresh existing injected tags so the main domain is used consistently
 """
 
 import re
 from pathlib import Path
 
 ROOT     = Path(__file__).parent.parent
-BASE_URL = "https://unblockedgames66.gitlab.io"
+BASE_URL = "https://unblocked-games-g-plus.poki2.online"
 
 PAGES = [
     {
@@ -55,13 +55,19 @@ def process_page(cfg: dict):
 
     content = path.read_text(encoding="utf-8", errors="replace")
 
-    if "update_static_pages.py" in content:
-        print(f"  · {path.parent.name}/index.html — already updated, skipping")
-        return
+    content = re.sub(
+        r'\s*<!-- SEO: injected by scripts/update_static_pages\.py -->.*?<meta property="og:url" content="[^"]+" />\n?',
+        '',
+        content,
+        count=1,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
 
     # 1. Remove old title + description
     content = re.sub(r'\s*<title>[^<]*</title>', '', content, flags=re.IGNORECASE)
     content = re.sub(r'\s*<meta\s+name="description"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+    content = re.sub(r'\s*<link\s+rel="canonical"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+    content = re.sub(r'\s*<meta\s+property="og:[^"]+"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
 
     # 2. Build SEO head block
     seo_head = (
@@ -86,7 +92,7 @@ def process_page(cfg: dict):
 
 
 def main():
-    print("Phase 3 — Static pages SEO update")
+    print("Phase 3 — Static pages SEO refresh")
     for cfg in PAGES:
         process_page(cfg)
 

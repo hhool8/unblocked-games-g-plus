@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT      = Path(__file__).parent.parent
 INDEX     = ROOT / "index.html"
-BASE_URL  = "https://unblockedgames66.gitlab.io"
+BASE_URL  = "https://unblocked-games-g-plus.poki2.online"
 
 TITLE       = "Unblocked Games G+ — Play Free Games Unblocked at School"
 DESCRIPTION = (
@@ -226,44 +226,58 @@ SEO_CONTENT = """
 
 content = INDEX.read_text(encoding="utf-8", errors="replace")
 
-# Guard: skip if already updated
-if "update_homepage.py" in content:
-    print("· index.html — already updated, skipping")
-else:
-    # 1. Remove old title + description
-    content = re.sub(r'\s*<title>[^<]*</title>', '', content, flags=re.IGNORECASE)
-    content = re.sub(r'\s*<meta\s+name="description"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+# Remove any previous injected homepage SEO block and section so the script can refresh URLs.
+content = re.sub(
+  r'\s*<!-- SEO: injected by scripts/update_homepage\.py -->.*?</script>\s*<script type="application/ld\+json">.*?</script>',
+  '',
+  content,
+  count=1,
+  flags=re.IGNORECASE | re.DOTALL,
+)
+content = re.sub(
+  r'\n?<!-- SEO semantic section — injected by scripts/update_homepage\.py -->.*?</section>\s*',
+  '\n',
+  content,
+  count=1,
+  flags=re.IGNORECASE | re.DOTALL,
+)
 
-    # 2. Build SEO head block
-    ws_json  = json.dumps(WEBSITE_SCHEMA,  ensure_ascii=False, indent=2)
-    faq_json = json.dumps(FAQPAGE_SCHEMA,  ensure_ascii=False, indent=2)
+# Remove old generic SEO tags to avoid duplicates.
+content = re.sub(r'\s*<title>[^<]*</title>', '', content, flags=re.IGNORECASE)
+content = re.sub(r'\s*<meta\s+name="description"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+content = re.sub(r'\s*<meta\s+name="keywords"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+content = re.sub(r'\s*<link\s+rel="canonical"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+content = re.sub(r'\s*<meta\s+property="og:[^"]+"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+content = re.sub(r'\s*<meta\s+name="twitter:[^"]+"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
 
-    seo_head = f"""    <!-- SEO: injected by scripts/update_homepage.py -->
-    <title>{TITLE}</title>
-    <meta name="description" content="{DESCRIPTION}" />
-    <meta name="keywords" content="{KEYWORDS}" />
-    <link rel="canonical" href="{BASE_URL}/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{TITLE}" />
-    <meta property="og:description" content="{DESCRIPTION}" />
-    <meta property="og:url" content="{BASE_URL}/" />
-    <meta property="og:image" content="{BASE_URL}/assets/img/og-cover.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{TITLE}" />
-    <meta name="twitter:description" content="{DESCRIPTION}" />
-    <meta name="twitter:image" content="{BASE_URL}/assets/img/og-cover.jpg" />
-    <script type="application/ld+json">
+ws_json  = json.dumps(WEBSITE_SCHEMA,  ensure_ascii=False, indent=2)
+faq_json = json.dumps(FAQPAGE_SCHEMA,  ensure_ascii=False, indent=2)
+
+seo_head = f"""    <!-- SEO: injected by scripts/update_homepage.py -->
+  <title>{TITLE}</title>
+  <meta name="description" content="{DESCRIPTION}" />
+  <meta name="keywords" content="{KEYWORDS}" />
+  <link rel="canonical" href="{BASE_URL}/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{TITLE}" />
+  <meta property="og:description" content="{DESCRIPTION}" />
+  <meta property="og:url" content="{BASE_URL}/" />
+  <meta property="og:image" content="{BASE_URL}/assets/img/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{TITLE}" />
+  <meta name="twitter:description" content="{DESCRIPTION}" />
+  <meta name="twitter:image" content="{BASE_URL}/assets/img/og-cover.jpg" />
+  <script type="application/ld+json">
 {ws_json}
-    </script>
-    <script type="application/ld+json">
+  </script>
+  <script type="application/ld+json">
 {faq_json}
-    </script>"""
+  </script>"""
 
-    content = re.sub(r'(</head>)', f"{seo_head}\n\\1", content, count=1, flags=re.IGNORECASE)
+content = re.sub(r'(</head>)', f"{seo_head}\n\\1", content, count=1, flags=re.IGNORECASE)
 
-    # 3. Append SEO content section before </main>
-    if "</main>" in content:
-        content = content.replace("</main>", SEO_CONTENT + "\n</main>", 1)
+if "</main>" in content:
+  content = content.replace("</main>", SEO_CONTENT + "\n</main>", 1)
 
-    INDEX.write_text(content, encoding="utf-8")
-    print("✓ index.html — SEO header + FAQ section injected")
+INDEX.write_text(content, encoding="utf-8")
+print("✓ index.html — SEO header + FAQ section refreshed")

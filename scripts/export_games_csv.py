@@ -13,7 +13,7 @@ from pathlib import Path
 BASE = Path(__file__).parent.parent
 GAME_DIR = BASE / "game"
 OUT = BASE / "scripts" / "games_for_gsite.csv"
-BASE_URL = "https://unblockedgames66.gitlab.io"
+BASE_URL = "https://unblocked-games-g-plus.poki2.online"
 
 def extract(html: str, slug: str) -> dict:
     # Title: from og:title (already injected) or h1

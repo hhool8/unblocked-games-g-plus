@@ -10,7 +10,7 @@ import os, re
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-BASE_URL = "https://unblockedgames66.gitlab.io"
+BASE_URL = "https://unblocked-games-g-plus.poki2.online"
 
 # ─── 1. robots.txt ────────────────────────────────────────────────────────────
 robots_path = ROOT / "robots.txt"

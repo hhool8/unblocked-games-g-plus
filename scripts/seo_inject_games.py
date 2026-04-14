@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT     = Path(__file__).parent.parent
 GAME_DIR = ROOT / "game"
-BASE_URL = "https://unblockedgames66.gitlab.io"
+BASE_URL = "https://unblocked-games-g-plus.poki2.online"
 IND_DOMAIN_PLACEHOLDER = "INDEPENDENT_DOMAIN"
 
 # ---------------------------------------------------------------------------
@@ -55,10 +55,6 @@ def extract_genres(content: str) -> list:
         if g:
             cleaned.append(g)
     return cleaned or ["Browser Game"]
-
-
-def already_injected(content: str) -> bool:
-    return "FUTURE_CANONICAL" in content or '"@type": "VideoGame"' in content
 
 
 def build_seo_block(slug: str, title: str, genres: list) -> str:
@@ -161,15 +157,25 @@ def process_file(path: Path) -> bool:
     slug    = path.stem
     content = path.read_text(encoding="utf-8", errors="replace")
 
-    if already_injected(content):
-        return False  # skip already-processed
-
     title  = extract_title(content, slug)
     genres = extract_genres(content)
 
-    # 1. Remove old weak <title> and <meta description>
+    # Remove any previous injected block so canonical/OG/JSON-LD can be refreshed.
+    content = re.sub(
+        r'\s*<!-- SEO: injected by scripts/seo_inject_games\.py -->.*?</script>',
+        '',
+        content,
+        count=1,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    # 1. Remove old SEO tags before reinjecting.
     content = re.sub(r'\s*<title>[^<]*</title>', '', content, flags=re.IGNORECASE)
     content = re.sub(r'\s*<meta\s+name="description"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+    content = re.sub(r'\s*<meta\s+name="keywords"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+    content = re.sub(r'\s*<link\s+rel="canonical"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+    content = re.sub(r'\s*<meta\s+property="og:[^"]+"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
+    content = re.sub(r'\s*<meta\s+name="twitter:[^"]+"[^>]*/?\s*>', '', content, flags=re.IGNORECASE)
 
     # 2. Build and inject SEO block before </head>
     seo_block = build_seo_block(slug, title, genres)
@@ -188,14 +194,11 @@ def process_file(path: Path) -> bool:
 def main():
     files   = sorted(GAME_DIR.glob("*.html"))
     updated = 0
-    skipped = 0
     for f in files:
         if process_file(f):
             updated += 1
-        else:
-            skipped += 1
 
-    print(f"✓ seo_inject_games — {updated} files updated, {skipped} skipped (already injected)")
+    print(f"✓ seo_inject_games — {updated} files refreshed")
 
 
 if __name__ == "__main__":
